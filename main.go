@@ -56,7 +56,7 @@ func main (){
 */
 
 // SLICES
-
+/*
   var intSlice []int = []int{4,5,6}
   fmt.Println(intSlice)
   fmt.Printf("The length is %v with capacity %v \n", len(intSlice), cap(intSlice))
@@ -71,6 +71,18 @@ func main (){
 
   var intSlice3 []int = make([]int, 3,8) // Weve specified length 3 and capcity 8
   fmt.Println(intSlice3)
+*/
+//go run .\main.go
+
+// MAPS
+var myMap map[string]string = make(map[string]string)
+fmt.Println(myMap)
+
+var myMap2 = map[string]uint{"Nelson":21, "Ruth":44}
+fmt.Println(myMap2)
+fmt.Println(myMap2["Nelson"])
+
+
 
 
 
