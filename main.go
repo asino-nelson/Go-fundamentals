@@ -1,101 +1,117 @@
 package main
+
 import "fmt"
 
+	// STRUCTS
+	type person struct {
+		name string
+		age  int
+    department
+	}
 
-func main (){
+  type department struct {
+    departmentName string
+  }
 
-  // DATA TYPES AND VARIABLES
+func main() {
 
-  /*
-  fmt.Println("Hello world")
+	// DATA TYPES AND VARIABLES
 
-  var intNum int32 = 100
-  fmt.Println(intNum)
+	/*
+	  fmt.Println("Hello world")
 
-  var floatNum float64 = 100.0
-  fmt.Println(floatNum)
+	  var intNum int32 = 100
+	  fmt.Println(intNum)
 
-  var intNum1 int = 3
-  var intNum2 int = 2
-  fmt.Println(intNum1 + intNum2)
-  fmt.Println(intNum1 - intNum2)
-  fmt.Println(intNum1 * intNum2)
-  fmt.Println(intNum1 / intNum2)
-  fmt.Println(intNum1 % intNum2)
+	  var floatNum float64 = 100.0
+	  fmt.Println(floatNum)
 
-  var myString string = "Hello Nelson"
-  fmt.Println(myString)
+	  var intNum1 int = 3
+	  var intNum2 int = 2
+	  fmt.Println(intNum1 + intNum2)
+	  fmt.Println(intNum1 - intNum2)
+	  fmt.Println(intNum1 * intNum2)
+	  fmt.Println(intNum1 / intNum2)
+	  fmt.Println(intNum1 % intNum2)
 
-  var myBool bool = true
-  fmt.Println(myBool)
+	  var myString string = "Hello Nelson"
+	  fmt.Println(myString)
 
-  myVar := "Milk"
-  fmt.Println(myVar)
-  */
+	  var myBool bool = true
+	  fmt.Println(myBool)
 
-  // FUNCTIONS
+	  myVar := "Milk"
+	  fmt.Println(myVar)
+	*/
 
-  /*
-  sentence := "This is the print value"
+	// FUNCTIONS
 
-  PrintMe(sentence)
-  answer, remainder := intDivision(100,9)
-  fmt.Println(answer)
-  fmt.Printf("The result is %v with remainder %v", answer, remainder)
-*/
+	/*
+	  sentence := "This is the print value"
 
-// ARRAYS
-/*
-  var intArr = [3] int {1,2,3}
-  fmt.Println(intArr[0])
-  fmt.Println(intArr[1:3])
-  fmt.Println(intArr)
+	  PrintMe(sentence)
+	  answer, remainder := intDivision(100,9)
+	  fmt.Println(answer)
+	  fmt.Printf("The result is %v with remainder %v", answer, remainder)
+	*/
 
-  fruits := [...]string{"Apple","Mango","Kiwi"}
-  fmt.Println(fruits)
-*/
+	// ARRAYS
+	/*
+	   var intArr = [3] int {1,2,3}
+	   fmt.Println(intArr[0])
+	   fmt.Println(intArr[1:3])
+	   fmt.Println(intArr)
 
-// SLICES
-/*
-  var intSlice []int = []int{4,5,6}
-  fmt.Println(intSlice)
-  fmt.Printf("The length is %v with capacity %v \n", len(intSlice), cap(intSlice))
+	   fruits := [...]string{"Apple","Mango","Kiwi"}
+	   fmt.Println(fruits)
+	*/
 
-  intSlice = append(intSlice,7)
-  fmt.Println(intSlice)
-  fmt.Printf("\nThe length is %v with capacity %v \n", len(intSlice), cap(intSlice))
+	// SLICES
+	/*
+	   var intSlice []int = []int{4,5,6}
+	   fmt.Println(intSlice)
+	   fmt.Printf("The length is %v with capacity %v \n", len(intSlice), cap(intSlice))
 
-  var intSlice2 []int = []int{8,9}
-  intSlice = append(intSlice, intSlice2 ...)
-  fmt.Println(intSlice)
+	   intSlice = append(intSlice,7)
+	   fmt.Println(intSlice)
+	   fmt.Printf("\nThe length is %v with capacity %v \n", len(intSlice), cap(intSlice))
 
-  var intSlice3 []int = make([]int, 3,8) // Weve specified length 3 and capcity 8
-  fmt.Println(intSlice3)
-*/
+	   var intSlice2 []int = []int{8,9}
+	   intSlice = append(intSlice, intSlice2 ...)
+	   fmt.Println(intSlice)
+
+	   var intSlice3 []int = make([]int, 3,8) // Weve specified length 3 and capcity 8
+	   fmt.Println(intSlice3)
+	*/
+
+	// MAPS
+	/*
+	   var myMap map[string]string = make(map[string]string)
+	   fmt.Println(myMap)
+	*/
+
+	// LOOPS
+	/*
+	   var myMap2 = map[string]uint{"Nelson":21, "Ruth":44}
+	   fmt.Println(myMap2)
+	   fmt.Println(myMap2["Nelson"])
 
 
-// MAPS
-/*
-var myMap map[string]string = make(map[string]string)
-fmt.Println(myMap)
-*/
-var myMap2 = map[string]uint{"Nelson":21, "Ruth":44}
-fmt.Println(myMap2)
-fmt.Println(myMap2["Nelson"])
+	   for name, age := range myMap2{          // Iterating over map
+	     fmt.Printf("Name: %v , Age: %v \n", name, age)
+	   }
+
+	   for i:=0; i<5; i++ {
+	     fmt.Println(i)
+	   }
+	*/
 
 
- for name, age := range myMap2{          // Iterating over map
-   fmt.Printf("Name: %v , Age: %v \n", name, age)
- }
+// STRUCTS
+	var employee person = person{"Nelson", 100, department{"English"}}
+	fmt.Println(employee.name, employee.age, employee.departmentName )
 
-for i:=0; i<5; i++ {
-  fmt.Println(i)
 }
-
-
-
-}
-
 
 // FUNCTIONS
 
